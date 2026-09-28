@@ -38,7 +38,7 @@ Now search for (no events appear):
 ```
 %' AND (SELECT salary FROM users WHERE username='alice_test') > 3000 --
 ```
-We can conclude that Alice earns between 2000 and 3000. You have used blind SQL Injection to infer information!
+We can conclude that Alice earns between 2000 and 3000. You have used Blind SQL Injection to infer information!
 
 #### Vulnerable Code Section
 ```
