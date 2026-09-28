@@ -16,6 +16,14 @@ pip install flask
 ```
 
 ## Usage
+### First Run
+***Do this before running the apps!***
+
+Setup the database with the following command (only ever needs to run once):
+```
+python3 init_db.py
+```
+
 ### Vulnerable
 Start `app.py` and paste http://127.0.0.1:5000 into your browser
 ```
