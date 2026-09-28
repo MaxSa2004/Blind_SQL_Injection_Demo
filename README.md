@@ -24,8 +24,8 @@ Setup the database with the following command (only ever needs to run once):
 python3 init_db.py
 ```
 
-### Vulnerable
-Start `app.py` and paste http://127.0.0.1:5000 into your browser
+### Vulnerable App
+Start `app.py` and paste http://127.0.0.1:5000 into your browser.
 ```
 python3 app.py
 ```
@@ -54,8 +54,8 @@ try:
         events = []
 ```
 
-### Non-Vulnerable
-Start `appSAFE.py` and paste http://127.0.0.1:5000 into your browser
+### Non-Vulnerable App
+Start `appSAFE.py` and paste http://127.0.0.1:5000 into your browser.
 ```
 python3 appSAFE.py
 ```
@@ -68,9 +68,10 @@ Now search for (no events appear):
 ```
 %' AND (SELECT salary FROM users WHERE username='alice_test') > 3000 --
 ```
-`appSAFE` uses input handling and treats inputs as a value to test against the database rather than treating it as a regular full string
+No results appeared as input was cleaned and handled correctly.
 
-#### Safe Corrected Code
+#### Safe Corrected Code Section
+`appSAFE` uses input handling and treats inputs as a value to test against the database rather than treating it as a regular full string.
 
 ```
 query = """
